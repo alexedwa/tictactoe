@@ -26,7 +26,7 @@
       <item>
        <widget class="QLabel" name="X_Turn">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -38,7 +38,9 @@
          </size>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: red;</string>
+         <string notr="true">background-color: red;
+color: black;
+font-size: 50px;</string>
         </property>
         <property name="text">
          <string>X </string>
@@ -49,12 +51,15 @@
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QLabel" name="O_Turn">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -65,8 +70,13 @@
           <height>200</height>
          </size>
         </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
-         <string notr="true">background-color:black;</string>
+         <string notr="true">background-color:black;
+color: black;
+font-size: 50px;</string>
         </property>
         <property name="text">
          <string>O</string>
@@ -76,6 +86,9 @@
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
+        </property>
+        <property name="textInteractionFlags">
+         <set>Qt::NoTextInteraction</set>
         </property>
        </widget>
       </item>
@@ -92,33 +105,41 @@
       <item row="1" column="1">
        <widget class="QPushButton" name="a2_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item row="0" column="3">
        <widget class="QPushButton" name="c3_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item row="1" column="3">
        <widget class="QPushButton" name="c2_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -129,21 +150,29 @@
           <height>0</height>
          </size>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item row="2" column="3">
        <widget class="QPushButton" name="c1_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
         <property name="iconSize">
          <size>
@@ -162,52 +191,68 @@
       <item row="2" column="1">
        <widget class="QPushButton" name="a1_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
        <widget class="QPushButton" name="a3_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string notr="true"> </string>
         </property>
        </widget>
       </item>
       <item row="0" column="2">
        <widget class="QPushButton" name="b3_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
       <item row="1" column="2">
        <widget class="QPushButton" name="b2_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
@@ -240,13 +285,17 @@
       <item row="2" column="2">
        <widget class="QPushButton" name="b1_Button">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+font-size: 50px</string>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string> </string>
         </property>
        </widget>
       </item>
