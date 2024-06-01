@@ -367,6 +367,9 @@ font-size: 50px</string>
      <height>25</height>
     </rect>
    </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
    <widget class="QMenu" name="menuGame">
     <property name="title">
      <string>Game</string>
@@ -378,6 +381,11 @@ font-size: 50px</string>
   <action name="actionRestart_game">
    <property name="text">
     <string>Restart game</string>
+   </property>
+  </action>
+  <action name="actionyiuo">
+   <property name="text">
+    <string>yiuo</string>
    </property>
   </action>
  </widget>

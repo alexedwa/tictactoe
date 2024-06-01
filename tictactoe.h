@@ -37,6 +37,8 @@ private slots:
 
     void on_c3_Button_clicked();
 
+    void on_actionRestart_game_triggered();
+
 private:
     Ui::tictactoe *ui;
     int turnCount = 1;
@@ -45,7 +47,7 @@ private:
     int board[3][3] = {
         {2, 3, 4},       //a3, b3, c3
         {5, 6, 7},       //a2, b2, c2
-        {8, 9, 10}        //a1, b1, c1
+        {8, 9, 10}       //a1, b1, c1
     };
 };
 #endif // TICTACTOE_H

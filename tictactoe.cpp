@@ -1,6 +1,8 @@
 #include "tictactoe.h"
 #include "./ui_tictactoe.h"
 #include <QMessageBox>
+#include<QApplication>
+#include <QProcess>
 
 tictactoe::tictactoe(QWidget *parent)
     : QMainWindow(parent)
@@ -24,12 +26,6 @@ void tictactoe::checkWin(){
         ui->O_Turn->setStyleSheet("background-color: black;\ncolor: black;\nfont-size: 50px;");
         ui->X_Turn->setStyleSheet("background-color: red;\ncolor: black;\nfont-size: 50px;");
     }
-
-    if (turnCount == 9){
-        QMessageBox::about(this, "Draw", "'tis a draw. No one wins...");
-        return;
-    }
-
 
     //diagonal win
     if ( (board[0][0] == board[1][1] && board[1][1] == board[2][2]) || (board[0][2] == board[1][1] && board[1][1] == board[2][0]) ){
@@ -74,6 +70,40 @@ void tictactoe::checkWin(){
         if (board[0][2] == 0) QMessageBox::about(this, "Winner!", "Crosses have won!!!");
         else QMessageBox::about(this, "Winner!", "Noughts have won!!!");
     }
+
+    else if (turnCount == 9){
+        QMessageBox::about(this, "Draw", "'tis a draw. No one wins...");
+        return;
+    }
+}
+
+void tictactoe::on_actionRestart_game_triggered(){
+    qApp->quit();
+    QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
+
+    /*
+    ui->O_Turn->setStyleSheet("background-color: black;\ncolor: black;\nfont-size: 50px;");
+    ui->X_Turn->setStyleSheet("background-color: red;\ncolor: black;\nfont-size: 50px;");
+
+    turnCount = 1;
+
+    int board[3][3] = {
+        {2, 3, 4},       //a3, b3, c3
+        {5, 6, 7},       //a2, b2, c2
+        {8, 9, 10}       //a1, b1, c1
+    };
+
+    ui->a1_Button->setText(" ");
+    ui->a2_Button->setText(" ");
+    ui->a3_Button->setText(" ");
+    ui->b1_Button->setText(" ");
+    ui->b2_Button->setText(" ");
+    ui->b3_Button->setText(" ");
+    ui->c1_Button->setText(" ");
+    ui->c2_Button->setText(" ");
+    ui->c3_Button->setText(" ");
+    */
+
 }
 
 void tictactoe::on_a1_Button_clicked()
@@ -244,4 +274,3 @@ void tictactoe::on_c3_Button_clicked()
     checkWin();
     turnCount++;
 }
-
